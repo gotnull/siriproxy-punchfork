@@ -1,7 +1,7 @@
 PunchFork Random Recipe Generator, Siri style!
 ==============================================
 
-This is a plugin for SiriProxy that returns a random recipe from the PunchFork API (http://www.punchfork.com)
+This is a plugin for SiriProxy that returns a random recipe from the PunchFork API (http://www.punchfork.com/api)
 
 Setup
 -----
