@@ -28,7 +28,7 @@ class SiriProxy::Plugin::PunchFork < SiriProxy::Plugin
 
 	end
 
-	# Example: "Siri, what's for dinner?"
+	# Example: "Siri, what's for dinner?", "Siri, what's to eat?"
 	listen_for /(for|to) (dinner|eat)/i do |item|
 
 		say @responses[rand(@responses.size)]
