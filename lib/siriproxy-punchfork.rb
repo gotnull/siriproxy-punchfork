@@ -23,7 +23,11 @@ class SiriProxy::Plugin::PunchFork < SiriProxy::Plugin
 		#puts recipe
 
 		unless recipe.nil?
-			return "#{@responses[rand(@responses.size)]} #{recipe['recipe']['title']}."
+			if (recipe['error'])
+				puts "How the fuck should I know?"
+			else
+				puts "#{@responses[rand(@responses.size)]} #{recipe['recipe']['title']}."
+			end
 		end
 
 	end
