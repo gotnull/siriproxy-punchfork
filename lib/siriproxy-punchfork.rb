@@ -6,8 +6,9 @@ require 'httparty'
 class SiriProxy::Plugin::PunchFork < SiriProxy::Plugin
 
 	def initialize(config = {})
-		apikey = "1234567890"
+		apikey = "690d6c63c08a79"
 		@uri = "http://api.punchfork.com/random_recipe?key=#{apikey}"
+		@responses_wait = ["One moment.", "Your wish is my command.", "Yes, my master.", "Please hold.", "Just a second.", "Just chill.", "Hang on a second.", "Hold on a second.", "Just a moment.", "Give me a second."]
 		@responses = [  "Why don't you cook some fucking",
 				"Go to the supermarket and cook some fucking",
 				"You have cool dreadlocks, but why don't you cook some fucking",
@@ -39,7 +40,7 @@ class SiriProxy::Plugin::PunchFork < SiriProxy::Plugin
 	# Example: "Siri, what's for dinner?", "Siri, what's to eat?"
 	listen_for /(for|to) (dinner|eat)/i do |item|
 
-		say "What's for dinner?"
+		say @responses_wait[rand(@responses_wait.size)]
 
 		Thread.new {
 		
