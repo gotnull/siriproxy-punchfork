@@ -13,7 +13,7 @@ Setup
 Requirements
 ------------
 
-You'll need to register and obtain an API Key from http://punchfork.com/api on order to use this plugin.
+You'll need to register and obtain an API Key from http://punchfork.com/api in order to use this plugin.
 
 Usage
 -----
