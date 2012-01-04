@@ -15,7 +15,7 @@ Requirements
 
 You'll need to register and obtain an API Key from http://punchfork.com/api in order to use this plugin.
 
-NOTE: The Punchfork API limits the number of queries a single key can execute per day. For a free price you get a maximum of 500 API calls/day.
+NOTE: The Punchfork API limits the number of queries a single key can execute per day. For a **free price** you get a maximum of **500 API calls/day**.
 
 More info can be found here: http://punchfork.com/api#pricing
 
