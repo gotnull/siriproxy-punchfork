@@ -9,9 +9,9 @@ class SiriProxy::Plugin::PunchFork < SiriProxy::Plugin
 		apikey = "<apikey>"
 		@uri = "http://api.punchfork.com/random_recipe?key=#{apikey}"
 		@responses = [  "Why don't you cook some fucking",
-						"Go to the supermarket and cook some fucking",
-						"You have cool dreadlocks, but why don't you cook some fucking",
-						"That's easy, just cook some fucking"
+				"Go to the supermarket and cook some fucking",
+				"You have cool dreadlocks, but why don't you cook some fucking",
+				"That's easy, just cook some fucking"
 		]
 	end
 
