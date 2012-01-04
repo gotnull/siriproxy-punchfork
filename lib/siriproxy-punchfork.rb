@@ -6,7 +6,7 @@ require 'httparty'
 class SiriProxy::Plugin::PunchFork < SiriProxy::Plugin
 
 	def initialize(config = {})
-		apikey = "690d6c63c08a79"
+		apikey = "<apikey>"
 		@uri = "http://api.punchfork.com/random_recipe?key=#{apikey}"
 		@responses = [  "Why don't you cook some fucking",
 						"Go to the supermarket and cook some fucking",
