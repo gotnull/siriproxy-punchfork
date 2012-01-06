@@ -65,14 +65,16 @@ class SiriProxy::Plugin::PunchFork < SiriProxy::Plugin
 
 		Thread.new {
 		
-			say "#{random_recipe.show_title}"
+			recipe = random_recipe
+		
+			say "#{recipe.show_title}"
 		
 			object = SiriAddViews.new
 
 			object.make_root(last_ref_id)
 
 			answer = SiriAnswer.new("Image:", [
-				SiriAnswerLine.new("logo", "#{random_recipe.show_thumb}")
+				SiriAnswerLine.new("logo", "#{recipe.show_thumb}")
 			])
 
 			object.views << SiriAnswerSnippet.new([answer])
