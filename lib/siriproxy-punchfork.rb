@@ -24,7 +24,7 @@ class SiriProxy::Plugin::PunchFork < SiriProxy::Plugin
 	end  
 	
 	def initialize(config = {})
-		apikey = "690d6c63c08a79"
+		apikey = "apikey_goes_here"
 		@uri = "http://api.punchfork.com/random_recipe?key=#{apikey}"
 		@responses_wait = ["One moment.", "Your wish is my command.", "Yes, my master.", "Please hold.", "Just a second.", "Just chill.", "Hang on a second.", "Hold on a second.", "Just a moment.", "Give me a second."]
 		@responses = [  "Why don't you cook some",
